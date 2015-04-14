@@ -181,10 +181,11 @@
           .enter()
           .append("circle");
 
-        var circles = svg.selectAll("circle")
-          .data(dataset)
-          .enter()
-          .append("circle");
+        // var circles = svg.selectAll("circle")
+        //   .data(dataset)
+        //   .enter()
+        //   .append("circle");
+        // The above code was breaking the circles. Why????!!!
 
         circles.attr("cx", function(d, i) {
                   return (i * 50) + 25;
